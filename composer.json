@@ -1,6 +1,8 @@
 {
-    "name": "gulzar/calculator",
-    "description": "This demo package will do some calculations",
+    "name": "gulzarali/calculator",
+    "description": "Lite weight calculator package for laravel projects",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Gulzar Ali",
@@ -8,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "GulzarAli\\Calculator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GulzarAli\\Calculator\\CalculatorServiceProvider"
+            ]
+        }
+    }
 }
